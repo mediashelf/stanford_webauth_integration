@@ -1,0 +1,25 @@
+h1. Stanford-webauth-integration Plugin
+
+Code to simplify the process of integrating a Rails application with Stanford's Webauth System.
+
+
+Example
+=======
+
+Include StanfordWebauthIntegration::ControllerMethods in your controller(s).  This will override the set_current_user method. 
+
+<pre>
+class ApplicationController < ActionController::Base
+  
+  include StanfordWebauthIntegration::ControllerMethods
+  
+  filter_parameter_logging :password, :password_confirmation  
+  helper_method :set_current_user
+  
+  helper :all
+
+end
+</pre>
+
+
+Copyright (c) 2010 Stanford University, released under the Apache 2 License
