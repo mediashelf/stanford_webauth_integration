@@ -1,7 +1,6 @@
 h1. Stanford-webauth-integration Plugin
 
-Code to simplify the process of integrating a Rails application with Stanford's Webauth System.
-
+Controller mixins, views, and view helpers to simplify the process of integrating a Rails application with Stanford's Webauth System. 
 
 Example
 =======
